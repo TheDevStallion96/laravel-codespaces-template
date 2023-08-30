@@ -1,0 +1,28 @@
+/*  --------------------------------------------------------------------
+    Laravel Codespaces
+/*  --------------------------------------------------------------------
+    Streamline Laravel development with this pre-configured environment
+    for Microsoft Codespaces, empowering efficient coding, debugging,
+    and collaboration.
+
+    - Author: Tristan Elliott
+    - Version: 1.0.0
+    - License: MIT
+*/
+{
+	"name": "Laravel Codespaces",
+	"image": "mcr.microsoft.com/devcontainers/php:1-8.2-bullseye",
+	"forwardPorts": [
+		8080
+	],
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/mysql-homebrew:1": {},
+		"ghcr.io/devcontainers-contrib/features/vtop:2": {}
+	}
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html"
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
